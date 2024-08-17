@@ -1,0 +1,58 @@
+*{
+    font-family: "Outfit", sans-serif;
+}
+header{
+    background-color:   #B2B9BF;
+}
+header span{
+    color: #140d0d;
+}
+.nav-item a{
+    color: #e6e7ee;
+}
+/* Link visitado*/
+.nav-item a:visited{
+    color: #F8EDED;
+}
+.nav-item a:hover{
+    color: #7A8D9B;
+}
+#nav-butoon{
+    background-color: #7A8D9B;
+}
+.icon-square .bi{
+    background-color: #DABEB6;
+    color: beige;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 4px;
+}
+/*.img-proyecto1{
+    background-image: url('imagenes/imagen-de-pin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
+
+.proyecto-pinterest{
+    background-image: url('/images/clon-pinteres.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.proyecto-pinterest::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+    pointer-events: none; 
+}
+.proyecto-pinterest .d-flex.flex-column {
+    position: relative;
+    z-index: 2; 
+}
